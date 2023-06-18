@@ -40,6 +40,4 @@ export default withMDX({
         externalDir: true,
         esmExternals: false,
     },
-    basePath: isProd ? "/triratna" : undefined,
-    assetPrefix: isProd ? "/triratna/" : undefined,
 });
