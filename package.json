@@ -3,7 +3,6 @@
     "description": "website",
     "version": "0.1.0",
     "private": true,
-    "type": "module",
     "scripts": {
         "dev": "next dev",
         "frontend:dev": "source .secrets/dev.env && next dev",
