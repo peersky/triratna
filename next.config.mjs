@@ -39,7 +39,7 @@ export default withMDX({
     experimental: {
         externalDir: true,
         esmExternals: false,
-        images: { unoptimized: true },
     },
-    basePath: isProd ? "https://peersky.github.io/triratna" : undefined,
+    basePath: isProd ? "/triratna" : undefined,
+    assetPrefix: isProd ? "/triratna" : undefined,
 });
