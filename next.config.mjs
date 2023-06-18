@@ -1,7 +1,8 @@
+/** @type {import('next').NextConfig} */
 import emoji from "remark-emoji";
 import nextMDX from "@next/mdx";
 import remarkGfm from "remark-gfm";
-/** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === "production";
 const withMDX = nextMDX({
     options: {
         // If you use remark-gfm, you'll need to use next.config.mjs
@@ -40,5 +41,5 @@ export default withMDX({
         esmExternals: false,
         images: { unoptimized: true },
     },
-    basePath: "",
+    basePath: isProd ? "https://peersky.github.io/triratna" : undefined,
 });
