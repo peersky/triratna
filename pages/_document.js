@@ -1,7 +1,7 @@
 import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import Script from "next/script";
-const GTAG = process.env.NEXT_PUBLIC_ENGINE_GTAG;
+const GTAG = process.env.NEXT_PUBLIC_ENGINE_GTAG ?? "";
 
 export default class MyDocument extends Document {
     render() {
@@ -76,7 +76,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <body>
                     <noscript
                         dangerouslySetInnerHTML={{
-                            __html: `src="https://www.googletagmanager.com/ns.html?id=${NEXT_PUBLIC_ENGINE_GTAG}"
+                            __html: `src="https://www.googletagmanager.com/ns.html?id=${GTAG}"
               height="0"
               width="0"
               style="display:none;visibility:hidden"`,
