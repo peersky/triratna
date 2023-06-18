@@ -29,6 +29,8 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
+              with:
+                  path: main
             - name: Detect package manager
               id: detect-package-manager
               run: |
