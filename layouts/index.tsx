@@ -1,10 +1,11 @@
-import { Box, chakra, Flex } from "@chakra-ui/react";
+import { chakra, Flex } from "@chakra-ui/react";
 import { Suspense } from "react";
 import React from "react";
 import { Footer } from "../components";
 import { Navbar } from "../components";
 import { Scrollable } from "../components";
 import { _Sidebar } from "../components";
+import { ChakraComponent } from "@chakra-ui/system";
 const _LayoutWrapper = ({
     children,
     ...props
@@ -31,7 +32,6 @@ const _LayoutWrapper = ({
         </Scrollable>
     );
 };
-import { ChakraComponent } from "@chakra-ui/system";
 
 const LayoutWrapper: ChakraComponent<typeof _LayoutWrapper> =
     chakra(_LayoutWrapper);
@@ -39,7 +39,6 @@ export const getDefaultLayout = (page: React.ReactNode) => (
     <LayoutWrapper>{page}</LayoutWrapper>
 );
 export default LayoutWrapper;
-export { getAppLayout } from "./AppLayout";
+
 export { getBlogLayout } from "./BlogLayout";
 export { getBreadcrumbLayout } from "./BreadcumpLayout";
-export { getAdminLayout } from "./AdminLayout";
