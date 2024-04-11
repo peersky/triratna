@@ -1,8 +1,4 @@
-import {
-    extendTheme,
-    useColorModeValue,
-    withDefaultColorScheme,
-} from "@chakra-ui/react";
+import { extendTheme, withDefaultColorScheme } from "@chakra-ui/react";
 import Button from "./Button";
 import Tag from "./Tag";
 import Menu from "./Menu";
@@ -17,14 +13,12 @@ import Spinner from "./Spinner";
 import Heading from "./Heading";
 import { mode, StyleFunctionProps } from "@chakra-ui/theme-tools";
 
-
 const Accordion = {
     parts: ["container", "panel", "button"],
     baseStyle: {
         container: { borderColor: "white.300" },
         panel: { pb: 4 },
     },
-
 };
 
 const theme = extendTheme(withDefaultColorScheme({ colorScheme: "blue" }), {
