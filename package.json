@@ -6,7 +6,7 @@
     "scripts": {
         "dev": "next dev",
         "frontend:dev": "source .secrets/dev.env && next dev",
-        "frontend:build": "yarn run build",
+        "frontend:build": "pnpm run build",
         "build": "next build && next-sitemap && next export -o build",
         "start": "next start",
         "lint": "next lint",
