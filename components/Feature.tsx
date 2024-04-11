@@ -22,7 +22,7 @@ export default function StatsGridWithImage(props: any) {
             boxShadow={"xl"}
             mt={props.mt}
         >
-            <Container maxW={"7xl"} zIndex={10} position={"relative"}>
+            <Container maxW={"7xl"} position={"relative"}>
                 <Stack direction={{ base: "column", lg: "row" }}>
                     <Stack
                         flex={1}
