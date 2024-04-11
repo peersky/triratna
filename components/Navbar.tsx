@@ -57,7 +57,7 @@ export const Navbar = forwardRef<NavbarProps, "div">((props, ref) => {
     const styles = useStyleConfig("Navbar", { ...props });
     const { components } = theme;
     const themeLogo = theme.logo;
-
+    console.warn("eeey", themeLogo, webSiteConfig.DEFAULT_LOGO);
     return (
         <Flex
             ref={ref}
@@ -117,7 +117,6 @@ export const Navbar = forwardRef<NavbarProps, "div">((props, ref) => {
                     </Link>
                 )}
             </Flex>
-
             <Flex
                 pr={14}
                 justifyItems="flex-end"
